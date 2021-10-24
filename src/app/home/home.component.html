@@ -1,0 +1,19 @@
+<div class="container py-5">
+  <div class="row">
+    <div class="col-xs-12 col-md-3" *ngFor="let item of flowers">
+      <div class="card">
+        <img src="assets/image/flores/{{item.planta?.nome | lowercase}}.png" class="card-img-top image__flower">
+        <div class="card-body w-100">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">{{item.planta?.nome}}</h5>
+            <div class="counter">
+              {{item.contador}} <i class="bi bi-droplet-half"></i>
+            </div>
+          </div>
+          <p class="card-text"><span>Device ID:</span> {{item.deviceUUID}}</p>
+          <button class="btn btn-primary w-100" type="button" [routerLink]="[item.deviceUUID, item.id]">Verificar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

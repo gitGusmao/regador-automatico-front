@@ -7,3 +7,11 @@
     height: 150px;
     padding: 1rem;
 }
+
+span {
+    font-weight: 500;
+}
+
+p {
+    font-size: 12px;
+}

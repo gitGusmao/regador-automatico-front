@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { FlowerResponse } from './interfaces/flower.interface';
+import { FlowerService } from './services/flower.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
-export class AppComponent {
-  title = 'regador-automatico-front';
-}
+export class AppComponent {}
